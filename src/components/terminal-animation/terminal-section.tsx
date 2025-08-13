@@ -1,7 +1,7 @@
 'use client'
 import { useState, useEffect } from "react"
 import AnimatedTerminal from "@/components/terminal-animation";
-import { TerminalFontSize } from "@/components/terminal-animation";
+import { TerminalFontSize } from "@/components/terminal-animation/terminal";
 
 import {
   type TerminalsMap,
@@ -38,7 +38,7 @@ export function TerminalSection({ terminalData }: HomePageProps) {
     <section className={s.terminalWrapper} aria-hidden={true}>
       <AnimatedTerminal
         title={"👻 Ghostty"}
-        fontSize={fontSize}
+        fontSize={"xtiny"}
         whitespacePadding={
           windowWidth > 950 ? 20 : windowWidth > 850 ? 10 : 0
         }
