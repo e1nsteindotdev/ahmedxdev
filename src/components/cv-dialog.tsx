@@ -1,7 +1,6 @@
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 
-import { LoadingImage } from "@/components/ui/loading-image";
-
+import Image from "next/image"
 export function MyCV() {
   return (
     <Dialog>
@@ -9,7 +8,7 @@ export function MyCV() {
         OPEN MY CV
       </DialogTrigger>
       <DialogContent className="lg:h-screen lg:w-[1000px] bg-transparent  border-0 ring-0">
-        <LoadingImage
+        <Image
           src="/cv.png"
           className="h-full lg:h-[90%] object-contain"
           width={2480}
